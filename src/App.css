@@ -1,3 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 #backgroundImg {
     background-image: url("./imgs/Keychron-K3-Ultra-slim-Wireless-Mechanical-Keyboard-for-Mac-Windows-with-low-profile-Gateron-and-hot-swappable-low-profile-keychron-optical-switch_3024x.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    align-items: flex-end;
+    height: 80vh;
+    color: white;
+    padding: 0 5rem 4rem 0
+}
+
+#description {
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
+#btnDescription {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+#orderNowBtnContainer {
+    display: flex;
+    align-items: center;
+}
+
+#orderNowBtn {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px;
+    padding-left: 0;
+    width: 160px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+#orderNowBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+#orderNowBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+#orderNowBtn:hover span {
+    padding-right: 20px;
+}
+  
+#orderNowBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#productGrid {
+    display: grid;
+    padding: 5em 2em 5em 2em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.productItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+}
+
+.homeGridImg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.homeGridImg:hover {
+    cursor: pointer;
+}
+
+.homeGridDescription {
+    margin-top: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }

@@ -1,6 +1,12 @@
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import grid1 from './imgs/grid1.webp';
+import grid2 from './imgs/grid2.webp';
+import grid3 from './imgs/grid3.webp';
+import grid4 from './imgs/grid4.webp';
+import grid5 from './imgs/grid5.webp';
+import grid6 from './imgs/grid6.webp';
 
 const App = () => {
   return (
@@ -8,34 +14,36 @@ const App = () => {
       <Header />
 
       <div id="backgroundImg">
-        <h1>Keychron K3</h1>
-        <div>QMK | 80% Layout</div>
-        <button>Order Now</button>
+        <h1 id="description">Keychron K3 Wireless Mechanical Keyboard</h1>
+        <div id="orderNowBtnContainer">
+          <div id="btnDescription">Low Profile | 75% Layout | Hot-Swappable</div>
+          <button id="orderNowBtn"><span>Order Now</span></button>
+        </div>
       </div>
-
+     
       <div id="productGrid">
         <div className='productItem'>
-          <img src='' alt='img'></img>
-          <div>Title</div>
+          <img src={grid1} alt='img' className='homeGridImg'></img>
+          <div className='homeGridDescription'>Title</div>
         </div>
         <div className='productItem'>
-          <img src='' alt='img'></img>
-          <div>Title</div>
+          <img src={grid2} alt='img' className='homeGridImg'></img>
+          <div className='homeGridDescription'>Title</div>
         </div>
         <div className='productItem'>
-          <img src='' alt='img'></img>
-          <div>Title</div>
+          <img src={grid3} alt='img' className='homeGridImg'></img>
+          <div className='homeGridDescription'>Title</div>
         </div>
         <div className='productItem'>
-          <img src='' alt='img'></img>
-          <div>Title</div>
+          <img src={grid4} alt='img' className='homeGridImg'></img>
+          <div className='homeGridDescription'>Title</div>
         </div><div className='productItem'>
-          <img src='' alt='img'></img>
-          <div>Title</div>
+          <img src={grid5} alt='img' className='homeGridImg'></img>
+          <div className='homeGridDescription'>Title</div>
         </div>
         <div className='productItem'>
-          <img src='' alt='img'></img>
-          <div>Title</div>
+          <img src={grid6} alt='img' className='homeGridImg'></img>
+          <div className='homeGridDescription'>Title</div>
         </div>
       </div>
 

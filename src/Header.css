@@ -1,0 +1,31 @@
+.header {
+    height: 5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 2em;
+}
+
+#homeLink {
+    margin-right: 2em;
+}
+
+#shopLink {
+    margin-right: 2em;
+}
+
+#cartLink {
+    margin-right: 2em;
+}
+
+#cartIcon {
+    height: 1em;
+    width: 1em;
+}
+
+#cartIcon:hover {
+    cursor:pointer;
+}
