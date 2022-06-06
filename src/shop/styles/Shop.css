@@ -1,0 +1,53 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 10em;
+    background-color: rgb(245, 245, 245);
+}
+
+.banner h2 {
+    font-size: xx-large;
+    margin-bottom: 1em;
+    font-weight: bold ;
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+
+.shopBodyContainer {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+}
+
+#shopSideMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vh;
+}
+
+#shopSideMenuContainer div {
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.catalogContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3rem;
+    justify-items: center;
+    margin-bottom: 10rem;
+}

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,6 +10,8 @@ import grid5 from './imgs/grid5.webp';
 import grid6 from './imgs/grid6.webp';
 
 const App = () => {
+  const [cart, setCart] = useState({});
+
   return (
     <div>
       <Header />
@@ -24,26 +27,26 @@ const App = () => {
       <div id="productGrid">
         <div className='productItem'>
           <img src={grid1} alt='img' className='homeGridImg'></img>
-          <div className='homeGridDescription'>Title</div>
+          <div className='homeGridDescription'>Custom Keyboards</div>
         </div>
         <div className='productItem'>
           <img src={grid2} alt='img' className='homeGridImg'></img>
-          <div className='homeGridDescription'>Title</div>
+          <div className='homeGridDescription'>Normal Keyboards</div>
         </div>
         <div className='productItem'>
           <img src={grid3} alt='img' className='homeGridImg'></img>
-          <div className='homeGridDescription'>Title</div>
+          <div className='homeGridDescription'>Low Profile Keyboards</div>
         </div>
         <div className='productItem'>
           <img src={grid4} alt='img' className='homeGridImg'></img>
-          <div className='homeGridDescription'>Title</div>
+          <div className='homeGridDescription'>Mice</div>
         </div><div className='productItem'>
           <img src={grid5} alt='img' className='homeGridImg'></img>
-          <div className='homeGridDescription'>Title</div>
+          <div className='homeGridDescription'>ISO/JIS Layout Keyboards</div>
         </div>
         <div className='productItem'>
           <img src={grid6} alt='img' className='homeGridImg'></img>
-          <div className='homeGridDescription'>Title</div>
+          <div className='homeGridDescription'>Switches</div>
         </div>
       </div>
 

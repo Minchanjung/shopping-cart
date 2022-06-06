@@ -6,7 +6,7 @@ import carts from './shop/imgs/icons8-shopping-cart-50.png';
 const Header = () => {
     return (
         <div className="header">
-            <h1 className="logo">Fakechron</h1>
+            <h1 className="logo"><Link id='logo' to="/">Fakecron</Link></h1>
             <div id="linksContainer">
                 <Link id="homeLink" to="/">Home</Link>
                 <Link id="shopLink" to="/shop">Shop</Link>

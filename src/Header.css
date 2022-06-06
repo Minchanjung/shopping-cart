@@ -9,12 +9,25 @@
     margin-left: 2em;
 }
 
+#logo {
+    text-decoration: none;
+    color: black;
+}
+
 #homeLink {
     margin-right: 2em;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
 }
 
 #shopLink {
     margin-right: 2em;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: bold;
 }
 
 #cartLink {
