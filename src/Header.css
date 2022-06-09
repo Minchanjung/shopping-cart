@@ -42,3 +42,35 @@
 #cartIcon:hover {
     cursor:pointer;
 }
+
+.sidenavContainer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    background-color: white;
+}
+
+.sidenavContent {
+    margin: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidenavTitle {
+    margin-bottom: 2em;
+}
+
+#closeBtn {
+    font-weight: bolder;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}

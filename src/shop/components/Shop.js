@@ -4,12 +4,15 @@ import Footer from "../../Footer";
 import '../styles/Shop.css';
 import keyboards from '../../data/keyboards'
 import Item from "./Item";
+import { Link } from "react-router-dom";
 
-const Shop = () => {
+const Shop = (props) => {
+
+    const [cart, setCart] = useState(props.cartState);
 
     return (
         <div>
-            <Header />
+            <Header cartState={cart}/>
             <div className="banner">
                 <h2 id="sectionTitle">Keychron Keyboards</h2>
                 <div id="sectionDescription">Keychron Wireless Keyboard Collection</div>
@@ -25,7 +28,7 @@ const Shop = () => {
                 </div>
                 <div className="catalogContainer">
                     {keyboards.map((keyboard) => (
-                            <Item itemName={keyboard.name} productPrice={keyboard.price} imgSrc={keyboard.image} />
+                        <Link to={`/shop/${keyboard.id}`}><Item itemName={keyboard.name} productPrice={keyboard.price} imgSrc={keyboard.image} /></Link>
                     ))}
                 </div>
             </div>
@@ -35,3 +38,5 @@ const Shop = () => {
 }
 
 export default Shop;
+
+

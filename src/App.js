@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import keyboards from './data/keyboards';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
@@ -9,12 +10,12 @@ import grid4 from './imgs/grid4.webp';
 import grid5 from './imgs/grid5.webp';
 import grid6 from './imgs/grid6.webp';
 
-const App = () => {
-  const [cart, setCart] = useState({});
+const App = (props) => {
+  const [cart, setCart] = useState(props.cartState);
 
   return (
     <div>
-      <Header />
+      <Header cartState={cart}/>
 
       <div id="backgroundImg">
         <h1 id="description">Keychron K3 Wireless Mechanical Keyboard</h1>
@@ -23,7 +24,7 @@ const App = () => {
           <button id="orderNowBtn"><span>Order Now</span></button>
         </div>
       </div>
-     
+
       <div id="productGrid">
         <div className='productItem'>
           <img src={grid1} alt='img' className='homeGridImg'></img>
