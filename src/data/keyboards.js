@@ -11,55 +11,55 @@ import uniqid from 'uniqid';
 
 const keyboards = [
     {
-        id: uniqid(),
+        id: 1,
         name: 'Keychron K2 Wireless Keyboard',
         price: 69.00,
         image: key1
     },
     {
-        id: uniqid(),
+        id: 2,
         name: 'Keychron K1 Wireless Keyboard',
         price: 79.00,
         image: key2
     },
     {
-        id: uniqid(),
+        id: 3,
         name: 'Keychron K3 Ultra-Slim Wireless Keyboard',
         price: 74.00,
         image: key3
     },
     {
-        id: uniqid(),
+        id: 4,
         name: 'Keychron K8 Wireless Keyboard',
         price: 62.00,
         image: key4
     },
     {
-        id: uniqid(),
+        id: 5,
         name: 'Keychron K4 Wireless Keyboard',
         price: 69.00,
         image: key5
     },
     {
-        id: uniqid(),
+        id: 6,
         name: 'Keychron K6 Wireless Keyboard',
         price: 55.20,
         image: key6
     },
     {
-        id: uniqid(),
+        id: 7,
         name: 'Keychron K2(Hot-Swappable) Wireless Keyboard',
         price: 79.00,
         image: key7
     },
     {
-        id: uniqid(),
+        id: 8,
         name: 'Keychron K10 Wireless Keyboard',
         price: 74.00,
         image: key8
     },
     {
-        id: uniqid(),
+        id: 9,
         name: 'Keychron K7 Ultra-Slim Wireless Keyboard',
         price: 74.00,
         image: key9

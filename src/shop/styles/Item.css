@@ -12,6 +12,10 @@
     max-height: 80%;
 }
 
+.textAreaContainer {
+    margin-left: 2em;
+}
+
 #productName {
     font-size: medium;
     height: 3rem;

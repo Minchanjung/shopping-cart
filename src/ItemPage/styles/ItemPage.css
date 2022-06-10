@@ -1,0 +1,14 @@
+.productPageContentContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productPageContentContainer img {
+    flex: 1;
+    border: 1px solid black;
+}
+
+.productPageTextContainer {
+    border: 1px solid black;
+}

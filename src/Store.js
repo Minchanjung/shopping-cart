@@ -3,7 +3,7 @@ import Reducer from "./Reducer";
 
 
 const initialState = {
-    cart: [],
+    cart: ['this is global state'],
     error: null
 };
 

@@ -17,7 +17,7 @@ const RouterSwitch = () => {
                 <Routes>
                     <Route path="/" element={<App cartState={cart} />} />
                     <Route path="/shop" element={<Shop cartState={cart} />} />
-                    <Route path="/shop/:id" element={<ItemPage cartState={cart} />} />
+                    <Route path="/shop/:id" element={<ItemPage cartState={cart}/>} />
                 </Routes>
             </BrowserRouter>
         </Store>

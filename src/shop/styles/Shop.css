@@ -51,3 +51,8 @@
     justify-items: center;
     margin-bottom: 10rem;
 }
+
+.itemLink {
+    color: black;
+    text-decoration: none;
+}

@@ -28,7 +28,7 @@ const Shop = (props) => {
                 </div>
                 <div className="catalogContainer">
                     {keyboards.map((keyboard) => (
-                        <Link to={`/shop/${keyboard.id}`}><Item itemName={keyboard.name} productPrice={keyboard.price} imgSrc={keyboard.image} /></Link>
+                        <Link className="itemLink" to={`/shop/${keyboard.id}`}><Item itemName={keyboard.name} productPrice={keyboard.price} imgSrc={keyboard.image} /></Link>
                     ))}
                 </div>
             </div>
