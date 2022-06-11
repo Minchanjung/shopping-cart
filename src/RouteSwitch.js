@@ -1,8 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Shop from "./shop/components/Shop";
-import React, { useState } from 'react';
-import keyboards from "./data/keyboards";
+import React from 'react';
 import ItemPage from "./ItemPage/components/ItemPage";
 import Store from "./Store";
 

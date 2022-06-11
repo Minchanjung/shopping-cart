@@ -7,7 +7,6 @@ import key6 from '../shop/imgs/key5.webp';
 import key7 from '../shop/imgs/key7.webp';
 import key8 from '../shop/imgs/key8.webp';
 import key9 from '../shop/imgs/key9.webp';
-import uniqid from 'uniqid';
 import product1 from '../imgs/product1.webp';
 import product2 from '../imgs/product2.webp';
 import product3 from '../imgs/product3.webp';

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext }from "react";
+import React, { useState, useContext }from "react";
 import keyboards from "../../data/keyboards";
 import { Context } from "../../Store";
 import Header from "../../Header";
@@ -11,16 +11,7 @@ const ItemPage = ({ match, cartState}) => {
     const [state, dispatch] = useContext(Context);
     const productId = useParams();
     const product = keyboards.find((product) => product.id === parseInt(productId.id));
-    const testData = {cart: ['hi', 'hello']}
     const [quantity, setQuantity] = useState(1)
-
-    useEffect(() => {
-        dispatch({type: 'SET_POSTS', payload: testData});
-        dispatch({cart: 'test2'});
-        dispatch({type: 'SET_POSTS', payload: {cart: ['hi']}})
-    }, [])
-
-    console.log(state)
 
     const handleAddCart = () => {
         dispatch({type: 'ADD_POST', payload: {name: product.name, price: product.price, quantity: quantity}})
