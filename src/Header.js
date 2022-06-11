@@ -3,6 +3,7 @@ import { Context } from "./Store";
 import { Link } from "react-router-dom";
 import "./Header.css"
 import carts from './shop/imgs/icons8-shopping-cart-50.png';
+import logo from './imgs/logo.webp';
 
 const Header = (props) => {
 
@@ -15,7 +16,7 @@ const Header = (props) => {
 
     return (
         <div className="header">
-            <h1 className="logo"><Link id='logo' to="/">Fakecron</Link></h1>
+            <Link id='logo' to="/"><img src={logo} className="logo" alt="Keychron Logo"></img></Link>
             <div id="linksContainer">
                 <Link id="homeLink" to="/">Home</Link>
                 <Link id="shopLink" to="/shop">Shop</Link>
