@@ -10,12 +10,12 @@ const Reducer = (state, action) => {
         case 'ADD_POST':
             return {
                 ...state,
-                posts: state.posts.concat(action.payload)
+                cart: state.cart.concat(action.payload)
             };
         case 'REMOVE_POST':
             return {
                 ...state,
-                posts: state.posts.filter(post => post.id !== action.payload)
+                cart: state.cart.filter(post => post.id !== action.payload)
             };
         case 'SET_ERROR':
             return {

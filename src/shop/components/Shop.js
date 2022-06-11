@@ -7,12 +7,9 @@ import Item from "./Item";
 import { Link } from "react-router-dom";
 
 const Shop = (props) => {
-
-    const [cart, setCart] = useState(props.cartState);
-
     return (
         <div>
-            <Header cartState={cart}/>
+            <Header />
             <div className="banner">
                 <h2 id="sectionTitle">Keychron Keyboards</h2>
                 <div id="sectionDescription">Keychron Wireless Keyboard Collection</div>

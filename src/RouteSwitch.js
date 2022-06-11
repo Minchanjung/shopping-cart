@@ -8,16 +8,14 @@ import Store from "./Store";
 
 const RouterSwitch = () => {
 
-    const [cart, setCart] = useState([]);
-
     return (
 
         <Store>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<App cartState={cart} />} />
-                    <Route path="/shop" element={<Shop cartState={cart} />} />
-                    <Route path="/shop/:id" element={<ItemPage cartState={cart}/>} />
+                    <Route path="/" element={<App />} />
+                    <Route path="/shop" element={<Shop />} />
+                    <Route path="/shop/:id" element={<ItemPage />} />
                 </Routes>
             </BrowserRouter>
         </Store>

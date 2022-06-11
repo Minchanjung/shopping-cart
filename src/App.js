@@ -11,11 +11,9 @@ import grid5 from './imgs/grid5.webp';
 import grid6 from './imgs/grid6.webp';
 
 const App = (props) => {
-  const [cart, setCart] = useState(props.cartState);
-
   return (
     <div>
-      <Header cartState={cart}/>
+      <Header />
 
       <div id="backgroundImg">
         <h1 id="description">Keychron K3 Wireless Mechanical Keyboard</h1>

@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { Context } from "./Store";
 import { Link } from "react-router-dom";
 import "./Header.css"
 import carts from './shop/imgs/icons8-shopping-cart-50.png';
 
 const Header = (props) => {
 
-    const [cart, setCart] = useState(props.cartState);
+    const [state, dispatch] = useContext(Context);
     const [isActive, setIsActive] = useState(false);
 
     const handleClick = () => {
@@ -29,9 +30,9 @@ const Header = (props) => {
                     <h2 id="sidenavTitle">My Cart</h2>
 
                     <div id="sidenavItems">
-                        {cart.length === 0 ? <div>Cart is empty</div> : null}
-                        {cart.map(item => (
-                            <SidenavItems />
+                        {state.cart.length === 0 ? <div>Cart is empty</div> : null}
+                        {state.cart.map(object => (
+                            <SidenavItems name={object.name} price={object.price} quantity={object.quantity}/>
                         ))}
                     </div>
                 </div>
@@ -40,10 +41,22 @@ const Header = (props) => {
     )
 }
 
-const SidenavItems = () => {
+const SidenavItems = (props) => {
+
+    const [state, dispatch] = useContext(Context);
+
+    const handleDelete = (index) => {
+        dispatch({type: 'REMOVE_POST', payload: state.cart[index]})
+    }
+
     return (
         <div>
-
+            <div>{props.name}</div>
+            <div>
+                <div>{props.price}</div>
+                <div>{props.quantity}</div>
+            </div>
+           <div onClick={handleDelete}>Trash</div>
         </div>
     )
 }
