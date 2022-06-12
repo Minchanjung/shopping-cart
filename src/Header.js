@@ -51,16 +51,16 @@ const SidenavItems = (props) => {
     }
 
     return (
-        <div>
-            <div>{props.name}</div>
-            <div>
-                <div>{props.price}</div>
-                <div>{props.quantity}</div>
+        <div className="cartTabContainer">
+            <div id="cartTabName">{props.name}</div>
+            <div id="cartTabPrice">$ {props.price}</div>
+            <div id="cartTabFlex">
+                <div id="cartTabQuantity">Quantity: {props.quantity}</div>
+                <div id="cartTrashBtn"onClick={handleDelete}>X</div>
             </div>
-           <div onClick={handleDelete}>Trash</div>
+       
         </div>
     )
 }
 
 export default Header;
-

@@ -56,6 +56,7 @@
     transition: 0.3s;
     padding-top: 60px;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .sidenavContent {
@@ -67,6 +68,11 @@
 
 #sidenavTitle {
     margin-bottom: 2em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    padding: 1em;
 }
 
 #closeBtn {
@@ -75,4 +81,35 @@
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+#cartTabName {
+    font-weight: bold;
+}
+
+.cartTabContainer {
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 3px;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#cartTabPrice {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+#cartTabQuantity {
+    font-weight: bold;
+}
+
+#cartTabFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cartTrashBtn {
+    font-weight: bold;
+    cursor: pointer;
 }
